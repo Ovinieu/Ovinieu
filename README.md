@@ -5,12 +5,19 @@
 
 
 
-# 👩🏻‍💻 Vinicius Marques
+# 👩🏻‍💻 **`Dev Back-end em formação`**
 
-**`Dev Back-end em formação`**
 
 
 **SOBRE MIM:**
+
+🎓 Estudante de Java
+
+💻 Focado em Desenvolvimento Back-end e Spring Boot
+
+🌱 Atualmente estudando: Java, Spring Boot
+
+⚡ Objetivo: me tornar um Desenvolvedor Back-end profissão
 
 
 
