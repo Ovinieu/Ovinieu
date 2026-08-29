@@ -1,1 +1,321 @@
 
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="430" viewBox="0 0 880 430" font-family="'Fira Code',monospace">
+<defs>
+  <linearGradient id="javaGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#7a0000"/><stop offset="0.55" stop-color="#e01010"/><stop offset="1" stop-color="#ff4d4d"/>
+  </linearGradient>
+  <linearGradient id="nodeGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#3b0a10"/><stop offset="1" stop-color="#a3121c"/>
+  </linearGradient>
+  <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+    <stop offset="0.5" stop-color="#fff" stop-opacity="0.45"/>
+    <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="bgGlow" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#ff1e1e" stop-opacity="0.30"/><stop offset="1" stop-color="#ff1e1e" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="softglow" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse">
+    <path d="M26 0H0V26" fill="none" stroke="#ff2b2b" stroke-opacity="0.06" stroke-width="1"/>
+  </pattern>
+</defs>
+
+<rect width="880" height="430" rx="18" fill="#08090c"/>
+<rect width="880" height="430" rx="18" fill="url(#grid)"/>
+<ellipse cx="150" cy="120" rx="320" ry="240" fill="url(#bgGlow)">
+  <animate attributeName="opacity" values="0.55;1;0.55" dur="5s" repeatCount="indefinite"/>
+</ellipse>
+<ellipse cx="780" cy="380" rx="300" ry="200" fill="url(#bgGlow)" opacity="0.5">
+  <animate attributeName="opacity" values="0.9;0.35;0.9" dur="6.5s" repeatCount="indefinite"/>
+</ellipse>
+<rect x="0.5" y="0.5" width="879" height="429" rx="18" fill="none" stroke="#ff2b2b" stroke-opacity="0.28"/>
+
+<!-- header -->
+<text x="34" y="46" font-size="19" font-weight="700" fill="#ff3b3b" letter-spacing="3" filter="url(#softglow)">&lt;/&gt; STACK PRINCIPAL</text>
+<text x="34" y="68" font-size="12" fill="#8a9099" letter-spacing="2">BACK-END · JAVA · SPRING BOOT</text>
+<rect x="34" y="80" width="0" height="2" fill="url(#javaGrad)">
+  <animate attributeName="width" from="0" to="812" begin="0.1s" dur="1.1s" fill="freeze"/>
+</rect>
+
+<!-- donut -->
+<g transform="rotate(-90 168 222)">
+  <circle cx="168" cy="222" r="86" fill="none" stroke="#15171c" stroke-width="24"/>
+  <circle cx="168" cy="222" r="86" fill="none" stroke="url(#javaGrad)" stroke-width="24" stroke-linecap="round"
+          filter="url(#glow)" stroke-dasharray="440.4 100.0" stroke-dashoffset="440.4">
+    <animate attributeName="stroke-dashoffset" from="440.4" to="0" begin="0.3s" dur="1.7s" fill="freeze"
+             calcMode="spline" keySplines="0.16 1 0.3 1" keyTimes="0;1" values="440.4;0"/>
+  </circle>
+  <circle cx="168" cy="222" r="86" fill="none" stroke="url(#nodeGrad)" stroke-width="24" stroke-linecap="round"
+          stroke-dasharray="84.0 456.4" stroke-dashoffset="-532.4">
+    <animate attributeName="stroke-dashoffset" from="-532.4" to="-448.4" begin="1.0s" dur="1.2s" fill="freeze"/>
+  </circle>
+</g>
+<circle cx="168" cy="222" r="68.0" fill="none" stroke="#ff2b2b" stroke-opacity="0.22" stroke-width="1">
+  <animate attributeName="r" values="68.0;72.0;68.0" dur="3.2s" repeatCount="indefinite"/>
+  <animate attributeName="stroke-opacity" values="0.05;0.35;0.05" dur="3.2s" repeatCount="indefinite"/>
+</circle>
+<text x="168" y="216" text-anchor="middle" font-size="12" fill="#8a9099" letter-spacing="2">JAVA</text>
+<text x="168" y="246" text-anchor="middle" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="26" font-weight="700" fill="#ff5252">0.00%
+ <animate attributeName="opacity" from="1" to="1" begin="0.500s" dur="0.073s" fill="remove"/></text>
+<text x="168" y="246" text-anchor="middle" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="26" font-weight="700" fill="#ff5252">3.77%
+ <animate attributeName="opacity" from="1" to="1" begin="0.573s" dur="0.073s" fill="remove"/></text>
+<text x="168" y="246" text-anchor="middle" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="26" font-weight="700" fill="#ff5252">7.54%
+ <animate attributeName="opacity" from="1" to="1" begin="0.645s" dur="0.073s" fill="remove"/></text>
+<text x="168" y="246" text-anchor="middle" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="26" font-weight="700" fill="#ff5252">11.32%
+ <animate attributeName="opacity" from="1" to="1" begin="0.718s" dur="0.073s" fill="remove"/></text>
+<text x="168" y="246" text-anchor="middle" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="26" font-weight="700" fill="#ff5252">15.09%
+ <animate attributeName="opacity" from="1" to="1" begin="0.791s" dur="0.073s" fill="remove"/></text>
+<text x="168" y="246" text-anchor="middle" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="26" font-weight="700" fill="#ff5252">18.86%
+ <animate attributeName="opacity" from="1" to="1" begin="0.864s" dur="0.073s" fill="remove"/></text>
+<text x="168" y="246" text-anchor="middle" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="26" font-weight="700" fill="#ff5252">22.63%
+ <animate attributeName="opacity" from="1" to="1" begin="0.936s" dur="0.073s" fill="remove"/></text>
+<text x="168" y="246" text-anchor="middle" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="26" font-weight="700" fill="#ff5252">26.40%
+ <animate attributeName="opacity" from="1" to="1" begin="1.009s" dur="0.073s" fill="remove"/></text>
+<text x="168" y="246" text-anchor="middle" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="26" font-weight="700" fill="#ff5252">30.17%
+ <animate attributeName="opacity" from="1" to="1" begin="1.082s" dur="0.073s" fill="remove"/></text>
+<text x="168" y="246" text-anchor="middle" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="26" font-weight="700" fill="#ff5252">33.95%
+ <animate attributeName="opacity" from="1" to="1" begin="1.155s" dur="0.073s" fill="remove"/></text>
+<text x="168" y="246" text-anchor="middle" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="26" font-weight="700" fill="#ff5252">37.72%
+ <animate attributeName="opacity" from="1" to="1" begin="1.227s" dur="0.073s" fill="remove"/></text>
+<text x="168" y="246" text-anchor="middle" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="26" font-weight="700" fill="#ff5252">41.49%
+ <animate attributeName="opacity" from="1" to="1" begin="1.300s" dur="0.073s" fill="remove"/></text>
+<text x="168" y="246" text-anchor="middle" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="26" font-weight="700" fill="#ff5252">45.26%
+ <animate attributeName="opacity" from="1" to="1" begin="1.373s" dur="0.073s" fill="remove"/></text>
+<text x="168" y="246" text-anchor="middle" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="26" font-weight="700" fill="#ff5252">49.03%
+ <animate attributeName="opacity" from="1" to="1" begin="1.445s" dur="0.073s" fill="remove"/></text>
+<text x="168" y="246" text-anchor="middle" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="26" font-weight="700" fill="#ff5252">52.81%
+ <animate attributeName="opacity" from="1" to="1" begin="1.518s" dur="0.073s" fill="remove"/></text>
+<text x="168" y="246" text-anchor="middle" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="26" font-weight="700" fill="#ff5252">56.58%
+ <animate attributeName="opacity" from="1" to="1" begin="1.591s" dur="0.073s" fill="remove"/></text>
+<text x="168" y="246" text-anchor="middle" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="26" font-weight="700" fill="#ff5252">60.35%
+ <animate attributeName="opacity" from="1" to="1" begin="1.664s" dur="0.073s" fill="remove"/></text>
+<text x="168" y="246" text-anchor="middle" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="26" font-weight="700" fill="#ff5252">64.12%
+ <animate attributeName="opacity" from="1" to="1" begin="1.736s" dur="0.073s" fill="remove"/></text>
+<text x="168" y="246" text-anchor="middle" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="26" font-weight="700" fill="#ff5252">67.89%
+ <animate attributeName="opacity" from="1" to="1" begin="1.809s" dur="0.073s" fill="remove"/></text>
+<text x="168" y="246" text-anchor="middle" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="26" font-weight="700" fill="#ff5252">71.66%
+ <animate attributeName="opacity" from="1" to="1" begin="1.882s" dur="0.073s" fill="remove"/></text>
+<text x="168" y="246" text-anchor="middle" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="26" font-weight="700" fill="#ff5252">75.44%
+ <animate attributeName="opacity" from="1" to="1" begin="1.955s" dur="0.073s" fill="remove"/></text>
+<text x="168" y="246" text-anchor="middle" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="26" font-weight="700" fill="#ff5252">79.21%
+ <animate attributeName="opacity" from="1" to="1" begin="2.027s" dur="0.073s" fill="remove"/></text>
+<text x="168" y="246" text-anchor="middle" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="26" font-weight="700" fill="#ff5252">82.98%
+ <animate attributeName="opacity" from="1" to="1" begin="2.100s" dur="0.073s" fill="freeze"/></text>
+<text x="168" y="268" text-anchor="middle" font-size="10" fill="#6d737c" letter-spacing="2">DO CÓDIGO</text>
+
+<!-- legend -->
+<g transform="translate(66,352)">
+  <circle cx="0" cy="0" r="6" fill="#ff2d2d" filter="url(#softglow)">
+    <animate attributeName="opacity" values="1;0.35;1" dur="2s" repeatCount="indefinite"/></circle>
+  <text x="14" y="4" font-size="12" fill="#c9ced6">Java</text>
+  <circle cx="88" cy="0" r="6" fill="#a3121c"/>
+  <text x="102" y="4" font-size="12" fill="#c9ced6">Node.js</text>
+</g>
+
+
+  <g class="row">
+    <text x="352" y="136" font-family="'Fira Code',monospace" font-size="15" font-weight="700" fill="#e9edf2" letter-spacing="1.5">JAVA  //  SPRING BOOT</text>
+    <rect x="352" y="150" width="468" height="28" rx="14" fill="#14161b" stroke="#23262d"/>
+    <g>
+      <rect x="352" y="150" width="0" height="28" rx="14" fill="url(#javaGrad)" filter="url(#glow)">
+        <animate attributeName="width" from="0" to="388.3" begin="0.4s" dur="1.6s" fill="freeze"
+                 calcMode="spline" keySplines="0.16 1 0.3 1" keyTimes="0;1" values="0;388.3"/>
+      </rect>
+      <clipPath id="clip150"><rect x="352" y="150" width="388.3" height="28" rx="14"/></clipPath>
+      <g clip-path="url(#clip150)">
+        <rect x="232" y="150" width="90" height="28" fill="url(#shine)" opacity="0.85">
+          <animate attributeName="x" from="232" to="820" begin="1.7999999999999998s" dur="2.4s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+    </g>
+    <text x="820" y="170" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">0.00%
+ <animate attributeName="opacity" from="1" to="1" begin="0.400s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="170" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">3.77%
+ <animate attributeName="opacity" from="1" to="1" begin="0.473s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="170" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">7.54%
+ <animate attributeName="opacity" from="1" to="1" begin="0.545s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="170" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">11.32%
+ <animate attributeName="opacity" from="1" to="1" begin="0.618s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="170" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">15.09%
+ <animate attributeName="opacity" from="1" to="1" begin="0.691s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="170" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">18.86%
+ <animate attributeName="opacity" from="1" to="1" begin="0.764s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="170" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">22.63%
+ <animate attributeName="opacity" from="1" to="1" begin="0.836s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="170" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">26.40%
+ <animate attributeName="opacity" from="1" to="1" begin="0.909s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="170" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">30.17%
+ <animate attributeName="opacity" from="1" to="1" begin="0.982s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="170" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">33.95%
+ <animate attributeName="opacity" from="1" to="1" begin="1.055s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="170" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">37.72%
+ <animate attributeName="opacity" from="1" to="1" begin="1.127s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="170" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">41.49%
+ <animate attributeName="opacity" from="1" to="1" begin="1.200s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="170" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">45.26%
+ <animate attributeName="opacity" from="1" to="1" begin="1.273s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="170" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">49.03%
+ <animate attributeName="opacity" from="1" to="1" begin="1.345s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="170" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">52.81%
+ <animate attributeName="opacity" from="1" to="1" begin="1.418s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="170" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">56.58%
+ <animate attributeName="opacity" from="1" to="1" begin="1.491s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="170" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">60.35%
+ <animate attributeName="opacity" from="1" to="1" begin="1.564s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="170" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">64.12%
+ <animate attributeName="opacity" from="1" to="1" begin="1.636s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="170" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">67.89%
+ <animate attributeName="opacity" from="1" to="1" begin="1.709s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="170" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">71.66%
+ <animate attributeName="opacity" from="1" to="1" begin="1.782s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="170" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">75.44%
+ <animate attributeName="opacity" from="1" to="1" begin="1.855s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="170" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">79.21%
+ <animate attributeName="opacity" from="1" to="1" begin="1.927s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="170" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">82.98%
+ <animate attributeName="opacity" from="1" to="1" begin="2.000s" dur="0.073s" fill="freeze"/></text>
+  </g>
+
+  <g class="row">
+    <text x="352" y="254" font-family="'Fira Code',monospace" font-size="15" font-weight="700" fill="#e9edf2" letter-spacing="1.5">NODE.JS  //  JAVASCRIPT</text>
+    <rect x="352" y="268" width="468" height="28" rx="14" fill="#14161b" stroke="#23262d"/>
+    <g>
+      <rect x="352" y="268" width="0" height="28" rx="14" fill="url(#nodeGrad)" filter="url(#glow)">
+        <animate attributeName="width" from="0" to="79.7" begin="0.9s" dur="1.6s" fill="freeze"
+                 calcMode="spline" keySplines="0.16 1 0.3 1" keyTimes="0;1" values="0;79.7"/>
+      </rect>
+      <clipPath id="clip268"><rect x="352" y="268" width="79.7" height="28" rx="14"/></clipPath>
+      <g clip-path="url(#clip268)">
+        <rect x="232" y="268" width="90" height="28" fill="url(#shine)" opacity="0.85">
+          <animate attributeName="x" from="232" to="820" begin="2.3s" dur="2.4s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+    </g>
+    <text x="820" y="288" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">0.00%
+ <animate attributeName="opacity" from="1" to="1" begin="0.400s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="288" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">0.77%
+ <animate attributeName="opacity" from="1" to="1" begin="0.473s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="288" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">1.55%
+ <animate attributeName="opacity" from="1" to="1" begin="0.545s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="288" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">2.32%
+ <animate attributeName="opacity" from="1" to="1" begin="0.618s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="288" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">3.09%
+ <animate attributeName="opacity" from="1" to="1" begin="0.691s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="288" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">3.87%
+ <animate attributeName="opacity" from="1" to="1" begin="0.764s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="288" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">4.64%
+ <animate attributeName="opacity" from="1" to="1" begin="0.836s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="288" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">5.42%
+ <animate attributeName="opacity" from="1" to="1" begin="0.909s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="288" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">6.19%
+ <animate attributeName="opacity" from="1" to="1" begin="0.982s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="288" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">6.96%
+ <animate attributeName="opacity" from="1" to="1" begin="1.055s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="288" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">7.74%
+ <animate attributeName="opacity" from="1" to="1" begin="1.127s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="288" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">8.51%
+ <animate attributeName="opacity" from="1" to="1" begin="1.200s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="288" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">9.28%
+ <animate attributeName="opacity" from="1" to="1" begin="1.273s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="288" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">10.06%
+ <animate attributeName="opacity" from="1" to="1" begin="1.345s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="288" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">10.83%
+ <animate attributeName="opacity" from="1" to="1" begin="1.418s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="288" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">11.60%
+ <animate attributeName="opacity" from="1" to="1" begin="1.491s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="288" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">12.38%
+ <animate attributeName="opacity" from="1" to="1" begin="1.564s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="288" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">13.15%
+ <animate attributeName="opacity" from="1" to="1" begin="1.636s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="288" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">13.93%
+ <animate attributeName="opacity" from="1" to="1" begin="1.709s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="288" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">14.70%
+ <animate attributeName="opacity" from="1" to="1" begin="1.782s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="288" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">15.47%
+ <animate attributeName="opacity" from="1" to="1" begin="1.855s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="288" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">16.25%
+ <animate attributeName="opacity" from="1" to="1" begin="1.927s" dur="0.073s" fill="remove"/></text>
+<text x="820" y="288" text-anchor="end" opacity="0" class=""
+ font-family="'Fira Code','JetBrains Mono',monospace" font-size="15" font-weight="700" fill="#ffdcdc">17.02%
+ <animate attributeName="opacity" from="1" to="1" begin="2.000s" dur="0.073s" fill="freeze"/></text>
+  </g>
+
+<text x="352" y="368" font-size="11" fill="#5f656e" letter-spacing="1.5">$ git commit -m "sempre estudando"</text>
+<rect x="352" y="378" width="7" height="13" fill="#ff2d2d">
+  <animate attributeName="opacity" values="1;1;0;0" dur="1.1s" repeatCount="indefinite"/>
+</rect>
+</svg>
