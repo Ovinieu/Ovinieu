@@ -1,10 +1,10 @@
-[README_1.md](https://github.com/user-attachments/files/31605869/README_1.md)<div align="center">
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a0000,50:7a0000,100:ff1e1e&height=180&section=header&text=Vinicius%20Marques&fontColor=ffffff&fontSize=42&fontAlignY=38&desc=Back-end%20Developer%20%7C%20Java%20%26%20Spring%20Boot&descAlignY=58&descSize=16&animation=fadeIn" width="100%"/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&pause=1000&color=FF1E1E&center=true&vCenter=true&random=false&width=600&height=60&lines=Prazer!+Meu+nome+%C3%A9+Vinicius+Marques;Back-end+Developer+in+progress...;Java+%E2%98%95+%2B+Spring+Boot+%F0%9F%8D%83" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&pause=1000&color=FF1E1E&center=true&vCenter=true&random=false&width=650&height=50&lines=Back-end+Developer+em+forma%C3%A7%C3%A3o;Foco+em+Java+%E2%98%95+%2B+Spring+Boot+%F0%9F%8D%83;Node.js+como+stack+secund%C3%A1ria;Sempre+aprendendo+algo+novo" alt="Typing SVG" />
 </a>
-
-<img src="https://raw.githubusercontent.com/Ovinieu/Ovinieu/main/assets/wave.svg" width="0" />
 
 <p>
   <img src="https://komarev.com/ghpvc/?username=Ovinieu&label=PROFILE+VIEWS&color=DF0000&style=for-the-badge" alt="views" />
@@ -14,36 +14,50 @@
 
 </div>
 
----
+<br>
 
-<img align="right" width="330" src="https://raw.githubusercontent.com/Ovinieu/Ovinieu/main/assets/coder.gif" alt="coding" />
+<table width="100%">
+<tr>
+<td width="55%" valign="top">
 
-## <img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="28"> **`Ovinieu`**
+## <img src="https://skillicons.dev/icons?i=java" width="26"/> **Sobre mim**
 
 ```java
-public class Vinicius {
-    String role     = "Back-end Developer";
-    String[] stack  = { "Java", "Spring Boot", "Node.js" };
-    String learning = "Java · Spring Boot · APIs REST";
-    String goal     = "Me tornar um Back-end profissional";
+public class Vinicius implements BackendDeveloper {
+
+    private String role     = "Back-end Developer";
+    private String[] stack  = { "Java", "Spring Boot", "Node.js" };
+    private String focus    = "APIs REST com Java";
+    private String goal     = "Virar Dev Back-end profissional";
+
+    @Override
+    public String currentlyLearning() {
+        return "Java, Spring Boot & arquitetura de APIs";
+    }
 }
 ```
 
 - 🎓 &nbsp;Estudante de **Java**
-- 💻 &nbsp;Focado em **Back-end** e **Spring Boot**
-- 🌱 &nbsp;Atualmente estudando: **Java, Spring Boot**
+- ☕ &nbsp;Stack principal: **Java + Spring Boot**
+- 🟢 &nbsp;Stack secundária: **Node.js**
 - ⚡ &nbsp;Objetivo: **virar Dev Back-end profissional**
 
-<br clear="right"/>
+</td>
+<td width="45%" align="center">
+
+<img src="assets/terminal.svg" width="100%" alt="terminal animado" />
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 🛠️ **Tecnologias do Dia a Dia**
+## 🛠️ **Tecnologias**
 
 <div align="center">
 
-<!-- GRÁFICO ANIMADO — salve o arquivo stack.svg em assets/ no seu repo -->
-<img src="https://raw.githubusercontent.com/Ovinieu/Ovinieu/main/assets/stack.svg" width="880" alt="Stack animada" />
+<img src="assets/stack.svg" width="880" alt="Stack animada — Java como stack principal, Node.js como secundária" />
 
 <br><br>
 
@@ -75,7 +89,10 @@ public class Vinicius {
 ## 🐍 **Contribuições**
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Ovinieu/Ovinieu/output/snake.svg" alt="snake" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ovinieu/Ovinieu/output/snake-dark.svg" />
+    <img src="https://raw.githubusercontent.com/Ovinieu/Ovinieu/output/snake.svg" alt="snake" />
+  </picture>
 </div>
 
 ---
